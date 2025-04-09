@@ -1,0 +1,399 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    z-index: -1;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.set {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.h21 {
+    margin-left: -15px;
+    text-decoration: none;
+
+}
+
+.ng {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 65%;
+    margin-top: 50px;
+
+}
+
+
+.lg {
+    padding: 10px 15px;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-self: center;
+}
+
+.lg a {
+    color: aliceblue;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.lg a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: aliceblue;
+    transition: width 0.3s ease;
+}
+
+.lg a:hover {
+    color: #ffcc00;
+    /* Or any accent color */
+}
+
+.lg a:hover::after {
+    width: 100%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.8);
+    /* or your navbar color */
+    transition: top 0.3s ease-in-out;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
+}
+
+main {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    margin-top: 100px;
+    height: 80vh;
+    flex-wrap: wrap;
+}
+
+.marvel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    padding: 20px;
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.image-section .m {
+    display: block;
+    position: relative;
+    object-fit: contain;
+    height: 460px;
+    width: 400px;
+    margin-left: 200px;
+    margin-top: -412px;
+    z-index: -1;
+}
+
+.bgv {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    margin-left: 200px;
+    border-radius: 10px;
+    margin-top: 29px;
+    z-index: 1;
+}
+
+
+
+.text-section {
+    font-family: "Poppins";
+    color: white;
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.image-section .n {
+    display: block;
+    position: relative;
+    object-fit: contain;
+    height: 460px;
+    width: 400px;
+    margin-right: 200px;
+    margin-top: -412px;
+    z-index: -1;
+}
+
+.bgvn {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    margin-right: 200px;
+    border-radius: 10px;
+    margin-top: 29px;
+    z-index: 1;
+}
+
+.image-section .mi {
+    display: block;
+    position: relative;
+    object-fit: contain;
+    height: 460px;
+    width: 400px;
+    margin-left: 200px;
+    margin-top: -412px;
+    z-index: -1;
+}
+
+.bgvmi {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    margin-left: 200px;
+    border-radius: 10px;
+    margin-top: 29px;
+    z-index: 1;
+}
+
+.image-section .a {
+    display: block;
+    position: relative;
+    object-fit: contain;
+    height: 460px;
+    width: 400px;
+    margin-right: 200px;
+    margin-top: -412px;
+    z-index: -1;
+}
+
+.bgva {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    margin-right: 200px;
+    border-radius: 10px;
+    margin-top: 29px;
+    z-index: 1;
+}
+
+.image-section .g {
+    display: block;
+    position: relative;
+    object-fit: contain;
+    height: 460px;
+    width: 400px;
+    margin-left: 200px;
+    margin-top: -412px;
+    z-index: -1;
+}
+
+.bgvg {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    margin-left: 200px;
+    border-radius: 10px;
+    margin-top: 29px;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    color: aliceblue;
+   
+}
+/* Mobile devices (phones) */
+@media (max-width: 600px) {
+    nav {
+        flex-wrap: row;
+        align-items: flex;
+        padding: 10px 15px;
+    }
+
+    .ng {
+
+        gap: 10px;
+        align-items: flex-start;
+        left: 40%;
+        margin-top: 40px;
+    }
+
+    .lg {
+        padding: 8px 0;
+    }
+
+    .marvel,
+    .dc,
+    .gow {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        gap: 20px;
+    }
+
+    .image-section img {
+        width: 90vw;
+        height: auto;
+    }
+
+    .text-section {
+        max-width: 90vw;
+        font-size: 16px;
+    }
+
+    .container {
+        margin-top: 50px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+.download-btn {
+    font-family:'Times New Roman', Times, serif;
+    display: inline-block;
+    padding: 10px 14px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.download-btn:hover {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Tablets (landscape & portrait) */
+@media (min-width: 601px) and (max-width: 992px) {
+    .ng {
+        left: 40%;
+    }
+
+    .marvel,
+    .dc,
+    .gow {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .image-section img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .text-section {
+        max-width: 80vw;
+        font-size: 17px;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/* Small desktops and laptops */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .image-section img {
+        width: 400px;
+        height: auto;
+    }
+
+    .text-section {
+        font-size: 17px;
+    }
+
+    .container {
+        height: auto;
+    }
+}

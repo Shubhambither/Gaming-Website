@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="set">
+            <a class="h21" href="index.html">
+                <h1>FREEGAMES.ORG</h1>
+            </a>
+        </nav>
+        <nav>
+            <ul class="ng">
+                <li class="lg"><a href="index.html">
+                        <h4>HOME</h4>
+                    </a></li>
+                <LI class=lg><a href="action.html">ACTION</a></LI>
+                <LI class=lg><a href="adventure.html">ADVENTURE</a></LI>
+                <LI class=lg><a href="About-us.html">ABOUT US</a></LI>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <video autoplay muted loop id="bg-video">
+            <source src="hero-2.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="container">
+            <div class="marvel" data-aos="fade-up" data-aos-duration="1000">
+                <div class="image-section">
+                    <a href="marvel.html"><img class="m" style="  box-shadow: 20px 0px 50px rgba(255, 2, 2, 0.908),-20px 0px 50px rgba(255, 2, 2, 0.908);
+                " src="img/marvel logo.jpg" alt=""></a>
+                </div>
+                <a href="marvel.html">
+                    <div class="text-section">
+                        <h2>Marvel Universe</h2>
+                        <p>Explore the amazing world of Marvel heroes, epic battles, and thrilling adventures. Join your
+                            favorite characters in action-packed stories and missions.</p>
+                    </div>
+            </div></a>
+        </div>
+        <div class="container">
+            <div class="dc" data-aos="zoom-in-up" data-aos-duration="1000">
+                <div class="image-section">
+                    <a href="dc.html"><img class="n" style="box-shadow: 20px 0px 50px rgba(6, 19, 201, 0.968), -20px 0px 50px rgba(6, 19, 201, 0.968);
+" src="img/dc white.jpg" alt=""></a>
+                </div>
+                <a href="dc.html"><div class="text-section">
+                    <h2>DC Universe</h2>
+                    <p>DC Universe Online is a Free-to-Play, massive multiplayer online action game set in the popular
+                        DC Universe. Become one of a new breed of Heroes or Villains and wield incredible powers as you
+                        go to war with legendary characters such as Batman, Superman, Lex Luthor and The Joker.</p>
+                </div></a>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="gow" data-aos="zoom-in-up" data-aos-duration="1000">
+                <div class="image-section">
+                    <a href="gow.html"><img class="g" style="box-shadow: 20px 0px 50px rgba(6, 19, 201, 0.968), -20px 0px 50px rgba(6, 19, 201, 0.968);
+" src="img/glo.png" alt=""></a>
+                </div><a href="gow.html"><div class="text-section">
+                    <h2>God of War Universe</h2>
+                    <p>God of War is an action-adventure game franchise created by David Jaffe and developed by Sony's
+                        Santa Monica Studio. It began in 2005 on the PlayStation 2 (PS2) video game console and has
+                        become a flagship series for PlayStation, consisting of nine installments across multiple
+                        platforms.</p>
+                </div></a>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="dc" data-aos="zoom-in-up" data-aos-duration="1000">
+                <div class="image-section">
+                    <a href="stars-wars.html"><img class="s" src="img/star-wars.png" alt=""></a>
+                </div>
+                <a href="stars-wars.html"><div class="text-section">
+                    <h2>Stars wars Universe</h2>
+                    <p>Star Wars is an American epic space opera media franchise created by George Lucas, which began
+                        with the eponymous 1977 film[a] and quickly became a worldwide pop culture phenomenon. </p>
+                </div></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="dc" data-aos="zoom-in-up" data-aos-duration="1000">
+                <div class="image-section">
+                    <a href="asssassians.html"><img class="a" src="img/assassians creed.png" alt=""></a>
+                </div>
+                <a href="asssassians.html"><div class="text-section">
+                    <h2>Assassin's creed</h2>
+                    <p>Assassin's Creed is a historical action-adventure video game series and media franchise published
+                        by Ubisoft and developed mainly by its studio Ubisoft Montreal using the game engine Anvil and
+                        its more advanced derivatives. </p>
+                </div></a>
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        let prevScrollPos = window.pageYOffset;
+        const header = document.querySelector("header");
+
+        window.addEventListener("scroll", () => {
+            const currentScrollPos = window.pageYOffset;
+
+            if (prevScrollPos > currentScrollPos) {
+                header.style.top = "0"; // scroll up → show navbar
+            } else {
+                header.style.top = "-100px"; // scroll down → hide navbar
+            }
+
+            prevScrollPos = currentScrollPos;
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

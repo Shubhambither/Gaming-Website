@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Games</title>
+    <link rel="stylesheet" href="marvel.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="set">
+            <a class="h21" href="index.html">
+                <h1>FREEGAMES.ORG</h1>
+
+            </a>
+        </nav>
+        <nav>
+            <ul class="ng">
+                <li class="lg"><a href="index.html">
+                        <h4>HOME</h4>
+                    </a></li>
+                <LI class=lg><a href="action.html">ACTION</a></LI>
+                <LI class=lg><a href="adventure.html">ADVENTURE</a></LI>
+                <LI class=lg><a href="About-us.html">ABOUT US</a></LI>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <video autoplay muted loop id="bg-video">
+            <source src="ms.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="container">
+            <div class="marvel" data-aos="fade-up" data-aos-duration="1000">
+                <div class="text-section">
+                 <a href="https://gamesleech.com/marvels-spider-man-remastered/"> <h2>Spider-Man Remastered</h2></a> 
+                 <a href="https://gamesleech.com/marvels-spider-man-remastered" class="download-btn" download>Download</a>
+ 
+                </div>
+                <div class="image-section">
+                   <a href="https://gamesleech.com/marvels-spider-man-remastered/"><video class="bgv" autoplay muted loop src="sp.mp4"></video></a> 
+                    <a href="https://gamesleech.com/marvels-spider-man-remastered/"><img class="m" src="img/tr.png" alt=""></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="marvel" data-aos="fade-up" data-aos-duration="1000">
+                <div class="image-section">
+                   <a href="https://gamesleech.com/marvels-spider-man-2/"><video class="bgvn" autoplay muted loop src="videoplayback.mp4"></video></a> 
+                    <a href="https://gamesleech.com/marvels-spider-man-2/"><img class="n" src="img/tr.png" alt=""></a>
+                </div>
+                <div class="text-section">
+                   <a href="https://gamesleech.com/marvels-spider-man-2/"><h2>Spider-Man 2</h2></a> 
+                   <a href="https://gamesleech.com/marvels-spider-man-2/" class="download-btn" download>Download</a>
+ 
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="marvel" data-aos="fade-up" data-aos-duration="1000">
+                <div class="text-section">
+                   <a href="https://gamesleech.com/marvels-spider-man-miles-morales/"><h2>Spider-Man Miles Morales</h2></a> 
+                   <a href="https://gamesleech.com/marvels-spider-man-miles-morales/" class="download-btn" download>Download</a>
+ 
+                </div> <div class="image-section">
+                   <a href="https://gamesleech.com/marvels-spider-man-miles-morales/"><video class="bgvmi" autoplay muted loop src="mi.mp4"></video></a> 
+                    <a href="https://gamesleech.com/marvels-spider-man-miles-morales/"><img class="mi" src="img/tr.png" alt=""></a>
+                </div>
+               
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="marvel" data-aos="fade-up" data-aos-duration="1000">
+                <div class="image-section">
+                   <a href="https://gamesleech.com/marvels-avengers/"><video class="bgva" autoplay muted loop src="av.mp4"></video></a> 
+                    <a href="https://gamesleech.com/marvels-avengers/"><img class="a" src="img/tr.png" alt=""></a>
+                </div>
+                  <div class="text-section">
+                   <a href="https://gamesleech.com/marvels-avengers/"><h2>The Avengers</h2></a> 
+                   <a href="https://gamesleech.com/marvels-avengers/" class="download-btn" download>Download</a>
+ 
+                </div>
+              
+            </div>
+        </div>
+        <div class="container">
+            <div class="marvel" data-aos="fade-up" data-aos-duration="1000">
+                <div class="text-section">
+                   <a href="https://gamesleech.com/marvels-guardians-of-the-galaxy/"><h2>Guardian Of The Galaxy</h2></a> 
+                   <a href="https://gamesleech.com/marvels-guardians-of-the-galaxy/" class="download-btn" download>Download</a>
+ 
+
+                </div>
+                <div class="image-section">
+                    <a href="https://gamesleech.com/marvels-guardians-of-the-galaxy/"><video class="bgvg" autoplay muted loop src="ga.mp4"></video></a>
+                    <a href="https://gamesleech.com/marvels-guardians-of-the-galaxy/"><img class="g" src="img/tr.png" alt=""></a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      <script>
+          let prevScrollPos = window.pageYOffset;
+          const header = document.querySelector("header");
+      
+          window.addEventListener("scroll", () => {
+              const currentScrollPos = window.pageYOffset;
+      
+              if (prevScrollPos > currentScrollPos) {
+                  header.style.top = "0"; // scroll up → show navbar
+              } else {
+                  header.style.top = "-100px"; // scroll down → hide navbar
+              }
+      
+              prevScrollPos = currentScrollPos;
+          });
+      </script>
+
+
+
+
+</body>
+
+</html>
